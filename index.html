@@ -17,7 +17,7 @@
   </head>
   <body>
     <div id="flat-chat"></div>
-    <div id="voiceflow-chat-frame"></div> 
+    <div id="voiceflow-chat-frame"></div> //cut here
     <script type="module">
       import { 
         DateExtension
@@ -44,7 +44,17 @@
                 DateExtension
               ],
             },
-          });
+          }).then(() => {
+    if (window.location.href.includes('https://medaxe.com.ua/#features-1') {
+      window.voiceflow.chat.proactive.push({ 
+        type: 'text', 
+        payload: { message: 'Are you interested in some 🔥🔥🔥 sneakers?' }
+      }, { 
+        type: 'text', 
+        payload: { message: 'Click on the chat to learn more!' }
+      })
+    }
+  });
         };
         v.src = 'https://cdn.voiceflow.com/widget/bundle.mjs';
         v.type = 'text/javascript';
